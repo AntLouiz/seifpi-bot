@@ -12,7 +12,8 @@ from decouple import config
 from utils import (
   get_schedules,
   get_date,
-  get_time_delta
+  get_time_delta,
+  get_now_schedules
 )
 
 
@@ -59,22 +60,12 @@ def now(bot, update):
     A command message to show what is in working.
   """
 
-  schedules = get_schedules()
-  delta_now = get_time_delta()
-  date_now = get_date()
   success_message = 'Atividades sendo desenvolvidas:\n'
   error_message = 'Nenhuma atividade no momento.'
-  now_schedules = []
 
-  for schedule in schedules:
-      schedule_date = get_date(schedule['date'])
-      start_delta = get_time_delta(schedule['start'])
-      end_delta = get_time_delta(schedule['end'])
+  now_schedules = get_now_schedules()
 
-      if (delta_now >= start_delta) and (delta_now <= end_delta) and date_now == schedule_date:
-        now_schedules.append(schedule['title'])
-
-  if len(schedules):
+  if len(now_schedules):
     bot.send_message(
       chat_id=update.message.chat_id,
       text=success_message
@@ -83,7 +74,7 @@ def now(bot, update):
     for schedule in now_schedules:
       bot.send_message(
         chat_id=update.message.chat_id,
-        text="-{}".format(schedule),
+        text="-{}".format(schedule['title']),
         parse_mode=telegram.ParseMode.MARKDOWN
       )
   else:

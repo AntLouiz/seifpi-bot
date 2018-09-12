@@ -1,0 +1,328 @@
+{
+  "data": {
+    "about": null,
+    "talk": [
+      {
+        "id": 0,
+        "title": "IoT e a Quarta Revolução Industrial",
+        "talker": "Alessandro Saraiva, Clodoaldo Brasilino & Herrinque Fontenele"
+      },
+      {
+        "id": 1,
+        "title": "Planejadores Clássicos e a nova era da Inteligência Artificial: planejando tarefas com VANTs",
+        "talker": "Prof. Dr. Ricardo Sekeff",
+        "is_confirmed": true
+      },
+      {
+        "id": 2,
+        "title": "Mulheres, ciência e tecnologia",
+        "talker": "Ana Maria Gomes",
+        "is_confirmed": true
+      },
+      {
+        "id": 3,
+        "title": "Algo mais sobre as startups",
+        "talker": "Prof. Dr. Gildário Lima",
+        "is_confirmed": true
+      },
+      {
+        "id": 4,
+        "title": "Algoritmo baseado na teoria da percolação para o reconhecimento de padrões em imagens da topografia cortical",
+        "talker": "Prof. Me. F. Gerson Meneses",
+        "is_confirmed": true
+      },
+      {
+        "id": 5,
+        "title": "Python é isso tudo mesmo?",
+        "talker": "Gustavo Carvalho",
+        "is_confirmed": true
+      }
+      
+    ],
+    "minicourse": [
+      {
+        "id": 1,
+        "title": "Desenvolvendo Bots para Telegram com Python",
+        "talker": "Luiz Rodrigo Gonzaga",
+        "is_confirmed": true
+      },
+      {
+        "id": 2,
+        "title": "Prática e Conceitos do Desenvolvimento Mobile Usando Tecnologias Nativas e Híbridas",
+        "talker": "João Patrick Rodrigues",
+        "is_confirmed": true
+      },
+      {
+        "id": 3,
+        "title": "Desenvolvimento de Aplicações para Desktop com Electron",
+        "talker": "Daniel Farias",
+        "is_confirmed": true
+      },
+      {
+        "id": 4,
+        "title": "Introdução à Programação Web com Python 3 e Django",
+        "talker": "Werberth Vinicius",
+        "is_confirmed": true
+      },
+      {
+        "id": 5,
+        "title": "Desenvolvendo Jogos com Python e PyGame",
+        "talker": "João Paulo Carvalho & Lissa Ximenes",
+        "is_confirmed": true
+      },
+      {
+        "id": 6,
+        "title": "Descobrindo o mundo das APIs",
+        "talker": "Patrick Mazulo",
+        "is_confirmed": true
+      }
+    ],
+    "workshop": [
+      {
+        "id": 1,
+        "title": "Introdução ao Arduino com Protótipos Controláveis",
+        "talker": "Gustavo Brandão, Pedro Gomes & Augusto Silva"
+      },
+      {
+        "id": 2,
+        "title": "Interfaces gráficas com Python 3",
+        "talker": "Evelyn Silva"
+      },
+      {
+        "id": 3,
+        "title": "Desenvolvendo Apps Mobile com Thunkable",
+        "talker": "Lissa Ximenes"
+      },
+      {
+        "id": 4,
+        "title": "Construindo um Console Retro com Raspberry Pi",
+        "talker": "Wendell Santos & Tawan Rodrigues"
+      },
+      {
+        "id": 5,
+        "title": "LaTex para a escrita de trabalhos acadêmicos",
+        "talker": "Deusiane Oliveira"
+      },
+      {
+        "id": 6,
+        "title": "Tratamento de imagens com Python",
+        "talker": "Pedro Cunha"
+      },
+      {
+        "id": 7,
+        "title": "Introdução a robótica utilizando a Plataforma Arduino",
+        "talker": "Thiago Tharles"
+      }
+    ],
+    "schedule": [
+      {
+        "date": "2018-09-12",
+        "start": "8:00",
+        "end": "9:00",
+        "title": "INÍCIO DO CREDENCIAMENTO",
+        "type": null,
+        "activity_id": null
+      },
+      {
+        "date": "2018-09-12",
+        "start": "9:30",
+        "end": "10:00",
+        "title": "ABERTURA E INSCRIÇOES DO CAMPEONATO DE PROGRAMAÇAO",
+        "type": null,
+        "activity_id": null
+      },
+      {
+        "date": "2018-09-12",
+        "start": "10:30",
+        "end": "12:00",
+        "title": "OFICINA 1",
+        "type": "workshop",
+        "activity_id": 1
+      },
+      {
+        "date": "2018-09-12",
+        "start": "13:00",
+        "end": "17:00",
+        "title": "MINICURSO 1",
+        "type": "minicourse",
+        "activity_id": 1
+      },
+      {
+        "date": "2018-09-12",
+        "start": "13:00",
+        "end": "17:00",
+        "title": "MINICURSO 2",
+        "type": "minicourse",
+        "activity_id": 2
+      },
+      {
+        "date": "2018-09-12",
+        "start": "18:00",
+        "end": "18:30",
+        "title": "CERIMONIA DE ABERTURA",
+        "type": null,
+        "activity_id": null
+      },
+      {
+        "date": "2018-09-12",
+        "start": "18:00",
+        "end": "19:30",
+        "title": "PALESTRA 1",
+        "type": "talk",
+        "activity_id": 1
+      },
+      {
+        "date": "2018-09-12",
+        "start": "20:00",
+        "end": "21:30",
+        "title": "MESA REDONDA",
+        "type": "talk",
+        "activity_id": 0
+      },
+      {
+        "date": "2018-09-13",
+        "start": "8:00",
+        "end": "12:00",
+        "title": "CAMPEONATOS DE JOGOS",
+        "type": null,
+        "activity_id": null
+      },
+      {
+        "date": "2018-09-13",
+        "start": "8:00",
+        "end": "8:30",
+        "title": "NENHUMA ATIVIDADE SENDO EXECUTADA",
+        "type": null,
+        "activity_id": null
+      },
+      {
+        "date": "2018-09-13",
+        "start": "9:00",
+        "end": "10:00",
+        "title": "OFICINA 2",
+        "type": "workshop",
+        "activity_id": 2
+      },
+      {
+        "date": "2018-09-13",
+        "start": "10:30",
+        "end": "12:00",
+        "title": "OFICINA 3",
+        "type": "workshop",
+        "activity_id": 3
+      },
+      {
+        "date": "2018-09-14",
+        "start": "8:00",
+        "end": "12:00",
+        "title": "MINICURSO 5",
+        "type": "minicourse",
+        "activity_id": 5
+      },
+      {
+        "date": "2018-09-14",
+        "start": "8:00",
+        "end": "12:00",
+        "title": "MINICURSO 6",
+        "type": "minicourse",
+        "activity_id": 6
+      },
+      {
+        "date": "2018-09-13",
+        "start": "13:00",
+        "end": "17:00",
+        "title": "MINICURSO 3",
+        "type": "minicourse",
+        "activity_id": 3
+      },
+      {
+        "date": "2018-09-13",
+        "start": "13:00",
+        "end": "17:00",
+        "title": "MINICURSO 4",
+        "type": "minicourse",
+        "activity_id": 4
+      },
+      {
+        "date": "2018-09-13",
+        "start": "18:00",
+        "end": "19:00",
+        "title": "PALESTRA 2",
+        "type": "talk",
+        "activity_id": 2
+      },
+      {
+        "date": "2018-09-13",
+        "start": "19:30",
+        "end": "20:30",
+        "title": "PALESTRA 3",
+        "type": "talk",
+        "activity_id": 3
+      },
+      {
+        "date": "2018-09-13",
+        "start": "21:00",
+        "end": "21:30",
+        "title": "ENCERRAMENTO DO CAMPEONATO DE PROGRAMAÇAO",
+        "type": null,
+        "activity_id": null
+      },
+      {
+        "date": "2018-09-14",
+        "start": "13:00",
+        "end": "15:00",
+        "title": "OFICINA 4",
+        "type": "workshop",
+        "activity_id": 4
+      },
+      {
+        "date": "2018-09-14",
+        "start": "13:00",
+        "end": "15:00",
+        "title": "OFICINA 5",
+        "type": "workshop",
+        "activity_id": 5
+      },
+      {
+        "date": "2018-09-14",
+        "start": "15:30",
+        "end": "17:00",
+        "title": "OFICINA 6",
+        "type": "workshop",
+        "activity_id": 6
+      },
+      {
+        "date": "2018-09-14",
+        "start": "15:30",
+        "end": "17:00",
+        "title": "OFICINA 7",
+        "type": "workshop",
+        "activity_id": 7
+      },
+      {
+        "date": "2018-09-14",
+        "start": "18:00",
+        "end": "19:00",
+        "title": "PALESTRA 4",
+        "type": "talk",
+        "activity_id": 4
+      },
+      {
+        "date": "2018-09-14",
+        "start": "19:30",
+        "end": "20:30",
+        "title": "PALESTRA 5",
+        "type": "talk",
+        "activity_id": 5
+      },
+      {
+        "date": "2018-09-14",
+        "start": "21:00",
+        "end": "21:30",
+        "title": "CERIMONIA DE ENCERRAMENTO",
+        "type": null,
+        "activity_id": null
+      }
+    ]
+  }
+}

@@ -191,7 +191,7 @@
         "date": "2018-09-13",
         "start": "8:00",
         "end": "8:30",
-        "title": "NENHUMA ATIVIDADE SENDO EXECUTADA",
+        "title": null,
         "type": null,
         "activity_id": null
       },

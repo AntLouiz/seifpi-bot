@@ -10,23 +10,6 @@ def get_schedules():
     return schedules
 
 
-def get_now_schedules():
-    schedules = get_schedules()
-    delta_now = get_time_delta()
-    date_now = get_date()
-    now_schedules = []
-
-    for schedule in schedules:
-        schedule_date = get_date(schedule['date'])
-        start_delta = get_time_delta(schedule['start'])
-        end_delta = get_time_delta(schedule['end'])
-
-        if (delta_now >= start_delta) and (delta_now <= end_delta) and date_now == schedule_date:
-            now_schedules.append(schedule)
-
-    return now_schedules
-
-
 def get_tasks():
     with open('seifpi.json', 'r', encoding="utf8") as file:
         data = json.load(file)
@@ -57,7 +40,7 @@ def get_minicourses():
 def get_minicouse_by_id(minicourse_id):
     pass
 
-def get_schedule_data(schedule_id, schedule_type):
+def get_schedule_data(activity_id, schedule_type):
     if schedule_type == 'task':
         data = get_tasks()
 
@@ -75,7 +58,7 @@ def get_schedule_data(schedule_id, schedule_type):
 
     if data:
         for d in data:
-            if d['id'] == schedule_id:
+            if d['id'] == activity_id:
                 return d
 
     return data
@@ -98,3 +81,20 @@ def get_time_delta(str_time=time.strftime('%H:%M')):
 
 def get_date(str_date=datetime.strftime(datetime.now(), '%Y-%m-%d')):
     return datetime.strptime(str_date, '%Y-%m-%d')
+
+
+def get_now_schedules():
+    schedules = get_schedules()
+    delta_now = get_time_delta()
+    date_now = get_date()
+    now_schedules = []
+
+    for schedule in schedules:
+        schedule_date = get_date(schedule['date'])
+        start_delta = get_time_delta(schedule['start'])
+        end_delta = get_time_delta(schedule['end'])
+
+        if (delta_now >= start_delta) and (delta_now <= end_delta) and date_now == schedule_date:
+            now_schedules.append(schedule)
+
+    return now_schedules

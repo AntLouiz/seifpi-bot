@@ -10,10 +10,8 @@ from telegram.ext import (
 from emoji import emojize
 from decouple import config
 from utils import (
-  get_schedules,
-  get_date,
-  get_time_delta,
-  get_now_schedules
+  get_now_schedules,
+  get_schedule_data
 )
 
 
@@ -60,27 +58,34 @@ def now(bot, update):
     A command message to show what is in working.
   """
 
-  success_message = 'Atividades sendo desenvolvidas:\n'
-  error_message = 'Nenhuma atividade no momento.'
-
+  message = ''
   now_schedules = get_now_schedules()
 
   if len(now_schedules):
+    message = 'Atividades sendo desenvolvidas:\n'
     bot.send_message(
       chat_id=update.message.chat_id,
-      text=success_message
+      text=message
     )
 
     for schedule in now_schedules:
+      data = get_schedule_data(schedule['activity_id'], schedule['type'])
+      message = "-Titulo: {}\n-Ministrante: {}\n-Horário: {} às {}".format(
+        data['title'],
+        data['talker'],
+        schedule['start'],
+        schedule['end']
+      )
       bot.send_message(
         chat_id=update.message.chat_id,
-        text="-{}".format(schedule['title']),
+        text=message,
         parse_mode=telegram.ParseMode.MARKDOWN
       )
   else:
+    message = 'Nenhuma atividade no momento.'
     bot.send_message(
       chat_id=update.message.chat_id,
-      text=error_message
+      text=message
     )
 
 start_handler = CommandHandler('start', start)

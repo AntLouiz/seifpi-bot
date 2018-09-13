@@ -53,6 +53,27 @@ def default(bot, update):
       parse_mode=telegram.ParseMode.MARKDOWN
   )
 
+def talkers(bot, update):
+  """
+    A command message to get all talkers
+  """
+
+  keyboard = []
+
+  keyboard.append([telegram.KeyboardButton("Patricko")])
+  keyboard.append([telegram.KeyboardButton("Luiz")])
+  keyboard.append([telegram.KeyboardButton("Werb")])
+  keyboard.append([telegram.KeyboardButton("Gustavo")])
+  keyboard.append([telegram.KeyboardButton("Niltao")])
+
+  keyboard_markup = telegram.ReplyKeyboardMarkup(keyboard)
+
+  bot.send_message(
+      chat_id=update.message.chat_id,
+      text="Aqui estao os palestrantes confirmados:",
+      reply_markup=keyboard_markup
+  )
+
 def now(bot, update):
   """
     A command message to show what is in working.
@@ -91,4 +112,5 @@ def now(bot, update):
 start_handler = CommandHandler('start', start)
 help_handler = CommandHandler('support', support)
 now_handler = CommandHandler('now', now)
+talkers_handler = CommandHandler('palestrantes', talkers)
 default_handler = MessageHandler(Filters.command, default)

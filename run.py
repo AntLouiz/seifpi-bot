@@ -4,7 +4,8 @@ from handlers import (
     help_handler,
     # get_movie_handler,
     default_handler,
-    now_handler
+    now_handler,
+    talkers_handler
 )
 from settings import TELEGRAM_BOT_TOKEN
 
@@ -15,6 +16,7 @@ def main():
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(now_handler)
+    dispatcher.add_handler(talkers_handler)
     dispatcher.add_handler(default_handler)
     # dispatcher.add_handler(get_movie_handler)
 

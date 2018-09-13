@@ -10,15 +10,12 @@ def get_schedules():
     return schedules
 
 
-def get_tasks():
+def get_talk():
     with open('seifpi.json', 'r', encoding="utf8") as file:
         data = json.load(file)
-        tasks = data['data']['task']
+        talk = data['data']['talk']
 
-    return tasks
-
-def get_task_by_id(task_id):
-    pass
+    return talk
 
 def get_workshops():
     with open('seifpi.json', 'r', encoding="utf8") as file:
@@ -27,9 +24,6 @@ def get_workshops():
 
     return workshop
 
-def get_workshop_by_id(workshop_id):
-    pass
-
 def get_minicourses():
     with open('seifpi.json', 'r', encoding="utf8") as file:
         data = json.load(file)
@@ -37,12 +31,9 @@ def get_minicourses():
 
     return minicourses
 
-def get_minicouse_by_id(minicourse_id):
-    pass
-
 def get_schedule_data(activity_id, schedule_type):
-    if schedule_type == 'task':
-        data = get_tasks()
+    if schedule_type == 'talk':
+        data = get_talk()
 
     elif schedule_type == 'schedule':
         data = get_schedules()

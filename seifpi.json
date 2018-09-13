@@ -324,5 +324,72 @@
         "activity_id": null
       }
     ]
-  }
+  },
+  "about": "A Semana de Informática do IFPI é realizada anualmente pelos alunos do técnico integrado do campus Parnaíba e tem como objetivo promover minicursos, palestras e debates voltados a área da computação na comunidade parnaibana e cidades adjacentes. O evento consta com seis edições bem-sucedidas se caracterizando com um dos únicos eventos tecnológicos na cidade de Parnaíba. O evento chega em sua 7ª edição ganhando espaço e reconhecimento no litoral piauiense com conhecimentos atualizados na área de informática voltado ao mercado profissional e antenado com as tendências tecnológicas, promovendo espaços de diálogos com profissionais renomados da região, minicursos sobre tecnologias populares, palestras relacionadas a realidade do mercado nacional, campeonatos de programação e jogos eletrônicos.",
+  "localization": {
+    "lat": -2.946360,
+    "long": -41.731138
+  },
+  "talkers": [
+        {
+          "name": "Patrick Mazulo",
+          "image_url": "https://www.seifpi.com.br/img/confirmados/mazulo.jpg",
+          "confirmed": true,
+          "description": "Técnico em Informática pelo CEEPMPP,\n quase Bacharel em Sistemas de Informação pela Faculdade Maurício de Nassau.\n Trabalha com desenvolvimento web desde 2011, tendo passado por empresas brasileiras e americanas.\n Atualmente trabalha como \"Software Engineer\" numa empresa do Vale do Silício. Usuário e compartilhador da palavra do Python,\n passa a maior parte do seu tempo estudando tecnologias, assim como maneiras de aplicá-las no mundo real."        
+        },
+        {
+            "name":"Prof. Me. Clodoaldo Brasilino",
+            "image_url":"https://www.seifpi.com.br/img/confirmados/clodoaldo.jpg",
+            "confirmed":true,
+            "description": "Professor de Informática do IFPI Campus Parnaíba. Bacharel e Mestre em Ciência da Computação pela Universidade Federal da Paraíba. Atua principalmente nas áreas de hardware, infraestrutura e redes de computadores. Instrutor e principal contato da Cisco NetAcademy em Parnaíba"
+        },
+        {
+            "name":"Prof. Me. F. Gerson Meneses",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/gerson.png",
+            "confirmed": true,
+            "description":  "Professor de Informática do IFPI - Campus Parnaíba. Doutorando em Biotecnologia pela Rede Nordeste de Biotecnologia, Mestre em Ciência da Computação pela Universidade Federal Fluminense, Especialista em Análise de Sistemas e em Banco de Dados, Bacharel em Ciência da Computação."
+        },
+        {
+            "name":"Prof. Dr. Ricardo Sekeff",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/sekeff.png",
+            "confirmed": true,
+            "description": "Docente do IFPI Campus Piripiri. Possui graduação em Ciências da Computação pela Universidade Estadual do Ceará (2000), mestrado em Maîtrise en Gestion des Organisations - Université du Québec à Chicoutimi (2003) e Doutorado pelo Instituto de Matemática e Estatística (IME) da Universidade de São Paulo (USP)."
+        },
+        {
+            "name":"Prof. Dr. Gildário Lima",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/gildario.png",
+            "confirmed": true,
+            "description": "Fundador do Instituto de Tecnologia, Inovação e Ciências do Delta (2015), presidente do Conselho Estadual da Olimpíada Brasileira de Robótica, diretor de Pesquisa e Desenvolvimento da Organização não Governamental Cajuína Tech, colaborador do Laboratório de Neuro-Inovação Tecnológica & Mapeamento Cerebral da UFPI e fundador do Método TRON."
+        },
+        {
+            "name":"Prof. Henrique Fontenele",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/henrique.jpg",
+            "confirmed": true,
+            "description": "Docente da Faculdade Mauricio de Nassau - Parnaíba. Possui graduação em Sistema de Informação pelo Instituto de Estudos Superiores da Amazônia (2009), especialização em Teste de Software pelo Instituto Euro-Americano de Educação, Ciência e Tecnologia (2011) e curso-tecnico-profissionalizante pela Escola Técnica Estadual Ministro Petrônio Portela (1999)."
+        },
+        {
+            "name":"Gustavo Carvalho",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/gustavo.jpg",
+            "confirmed": true,
+            "description": "Co-fundador do PUG Piauí. Tecnólogo em Análise e Desenvolvimento de Sistemas pela Universidade Estácio de Sá. Programador Python e Django experiente. Engenheiro de Software na Nuveo SmartCloud."
+        },
+        {
+            "name":"João Patrick Rodrigues",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/patrik.jpg",
+            "confirmed": true,
+            "description": "Técnico em Informática pelo IFPI Campus Parnaíba. Bacharelando em Sistemas de Informação pela Faculdade Maurício de Nassau, UNINASSAU. Atualmente trabalha na empresa TDA Informática como programador mobile com tecnologias híbridas e nativas, desenvolvedor de sites com Joomla e suporte de hardware."
+        },
+        {
+            "name":"Luiz Rodrigo Gonzaga",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/rodrigo.jpg",
+            "confirmed": true,
+            "description": "Bacharelando em Ciência da Computação pela Universidade Estadual do Piauí. Organizador e colaborador do PUG Parnaíba. Desenvolvedor Python e Django experiente. Trabalhou como Freelancer na empresa Colins. Atualmente estagia na empresa PVP"
+        },
+        {
+            "name":"Werberth Vinicius",
+            "image_url": "https://www.seifpi.com.br/img/confirmados/werberth.jpg",
+            "confirmed": true,
+            "description": "Bacharelando em Ciência da Computação pela Universidade Estadual do Piauí. Organizador e colaborador do PUG Parnaíba. Desenvolvedor Web na Midiacode. Experiente no desenvolvimento de APIs utilizando Python e Django."
+        }
+    ]
 }

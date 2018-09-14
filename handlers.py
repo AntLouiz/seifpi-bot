@@ -11,7 +11,8 @@ from emoji import emojize
 from decouple import config
 from utils import (
   get_now_schedules,
-  get_schedule_data
+  get_schedule_data,
+  get_talkers
 )
 
 
@@ -60,11 +61,10 @@ def talkers(bot, update):
 
   keyboard = []
 
-  keyboard.append([telegram.KeyboardButton("Patricko")])
-  keyboard.append([telegram.KeyboardButton("Luiz")])
-  keyboard.append([telegram.KeyboardButton("Werb")])
-  keyboard.append([telegram.KeyboardButton("Gustavo")])
-  keyboard.append([telegram.KeyboardButton("Niltao")])
+  all_talkers = get_talkers()
+
+  for talker in all_talkers:
+    keyboard.append([telegram.KeyboardButton("/palestrante {}".format(talker['name']))])
 
   keyboard_markup = telegram.ReplyKeyboardMarkup(keyboard)
 

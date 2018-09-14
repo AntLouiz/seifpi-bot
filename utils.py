@@ -89,3 +89,20 @@ def get_now_schedules():
             now_schedules.append(schedule)
 
     return now_schedules
+
+def get_talkers():
+    with open('seifpi.json', 'r', encoding="utf8") as file:
+        data = json.load(file)
+        talkers = data['talkers']
+
+    return talkers
+
+
+def get_talker(name):
+    talkers = get_talkers()
+
+    for talker in talkers:
+        if talker['name'] == name:
+            return talker
+
+    return None
